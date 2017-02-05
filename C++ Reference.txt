@@ -1,0 +1,88 @@
+	I/O stream
+
+	for strings use:
+	getline(cin, str);
+
+	Keyboard Buffer:
+	cin.ignore();
+	cin.sync();
+
+	Printf and Scanf format Specifiers:
+
+	%d  signed decimal int
+	%ld  signed decimal long int
+	%lld  signed decimal ll int
+	%f  float
+	%lf double
+	%c character
+	%s C-string
+
+	Printf sub-format specifiers: 
+
+	%(flag)(width).(precision)(format)
+	- flag = left-justify within given width instead of right-justify
+	0 flag = left-pads the number with 0 instead of blank spaces
+
+	%% prints %
+
+	Math functions
+
+	d = abs(d);
+	f = fabs(f);
+	f = sqrt(f);
+	f = pow(f (base),f (exp));
+	f = log2(f);
+	d = ceil(f);
+	d = floor(f);
+	f = cos(f); sin(f); tan(f); // f in radians
+
+	Vectors
+
+	vector<int> quizzes; or vector<int> quizzes(initial_size);
+	or vector<int> quizzes (init_size, value in each position);
+
+	Vector Library functions:
+
+	name.size(); returns the int size of vector
+	name[i]; returns the ith element in vector
+	name.push_back(value); adds an element to the end of vector
+	name.pop_back(); removes the element at end of vector
+	name.clear(); removes all elements from vector
+	name.empty(); check to see if vector is empty, returns true if empty
+	name.insert(i, value); adds element before the element in ith position
+	name.erase(i); removes element at ith position
+
+	String Library functions:
+
+	== overloads compare (test equality)
+	+= append to string
+
+	name.size(); returns size of string
+	name[i]; returns the ith element of string
+	name.substr(i); returns substring starting from position i to end of name string
+	name.substr(i, length); returns substring starting from position i to number of length
+		i.e. substr(3,5) returns [3, 8) substring
+	name.compare(str); returns 0 if equal, <0 if name is lexicographically first to str, >0 vice versa
+	name.c_str(); returns C-string equivalent to name
+	name.
+
+	CString Library Functions:
+
+	strlen(s); returns size of cstring
+	strcpy(s1, s2); copies s2 into s1
+	strncpy(s1, s2, n); copies first n chars from s2 into s1, set extra 0's into s1 if n exceeds s2 length
+	strcat(s1, s2); appends s2 into s1
+	strncat(s1, s2, n); appends first n chars from s2 into s1
+	strcmp(s1, s2); compares s1 with s2, see string compare()
+
+	C++ algorithms library
+
+	sort(V.begin(), V.end());
+	when used on a vector of a pair, it will sort the first element of the pair in ASC order
+
+	bool func (int i,int j) { return (i<j); }
+	sort(V.begin(), V.end(), func()); Sort the vector using specified function
+
+	replace sort with stable_sort if you want preservation of relative order
+
+
